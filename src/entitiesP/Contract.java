@@ -1,5 +1,7 @@
 package entitiesP;
 
+import java.text.DateFormat;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.ArrayList;
 
@@ -10,19 +12,20 @@ public class Contract {
     private Date stopDate;
     private Client client;
     private ArrayList<InsuredPerson> insuredPersons;
+    private static DateFormat dateFormat = DateFormat.getDateInstance(DateFormat.SHORT);
 
     public Contract(
         int number,
-        Date agreeDate,
-        Date startDate,
-        Date stopDate,
+        String agreeDate,
+        String startDate,
+        String stopDate,
         Client client,
         ArrayList<InsuredPerson> insuredPersons
     ) {
       this.number = number;
-      this.agreeDate = agreeDate;
-      this. startDate = startDate;
-      this.stopDate = stopDate;
+      this.setAgreeDate(agreeDate);
+      this.setStartDate(startDate);
+      this.setStopDate(stopDate);
       this.client = client;
       this.insuredPersons = insuredPersons;
     }
@@ -35,32 +38,50 @@ public class Contract {
         this.number = number;
     }
 
-    public Date getAgreeDate() {
-        return agreeDate;
+    public String getAgreeDate() {
+        return "" + dateFormat.format(agreeDate);
     }
 
-    public void setAgreeDate(Date agreeDate) {
-        this.agreeDate = agreeDate;
+    public void setAgreeDate(String agreeDate) {
+        try {
+            this.agreeDate = dateFormat.parse(agreeDate);
+        }catch(java.text.ParseException e){
+            System.out.println("wrong date format: " + agreeDate);
+        }finally {
+
+        }
     }
 
-    public Date getStartDate() {
-        return startDate;
+    public String getStartDate() {
+        return "" + dateFormat.format(startDate);
     }
 
-    public void setStartDate(Date startDate) {
-        this.startDate = startDate;
+    public void setStartDate(String startDate) {
+        try {
+            this.startDate = dateFormat.parse(startDate);
+        }catch(java.text.ParseException e){
+            System.out.println("wrong date format: " + startDate);
+        }finally {
+
+        }
     }
 
-    public Date getStopDate() {
-        return stopDate;
+    public String getStopDate() {
+        return "" + dateFormat.format(stopDate);
     }
 
-    public void setStopDate(Date stopDate) {
-        this.stopDate = stopDate;
+    public void setStopDate(String stopDate) {
+        try {
+            this.stopDate = dateFormat.parse(stopDate);
+        }catch(java.text.ParseException e){
+            System.out.println("wrong date format: " + stopDate);
+        }finally {
+
+        }
     }
 
-    public Client getClient() {
-        return client;
+    public String getClient() {
+        return client.getPersonFIO();
     }
 
     public void setClient(Client client) {
@@ -90,7 +111,7 @@ public class Contract {
         return null;
     }
 
-    public float mainPrice(){
+    public float getTotalPrice(){
         float sum = 0;
         for(InsuredPerson insuredPerson : insuredPersons){
             sum += insuredPerson.getInsurancePrice();

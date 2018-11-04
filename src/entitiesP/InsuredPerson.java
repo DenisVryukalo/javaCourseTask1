@@ -1,13 +1,16 @@
 package entitiesP;
 
+import java.text.DateFormat;
 import java.util.Date;
 
 public class InsuredPerson extends BasicPerson {
     private Date bornDate;
     private float insurancePrice;
+    private static DateFormat dateFormat = DateFormat.getDateInstance(DateFormat.SHORT);
 
-    public Date getBornDate() {
-        return bornDate;
+
+    public String getBornDate() {
+        return "" + dateFormat.format(bornDate);
     }
 
     public void setBornDate(Date bornDate) {
@@ -18,13 +21,19 @@ public class InsuredPerson extends BasicPerson {
         return insurancePrice;
     }
 
-    public void setInsurancePrice(float insurancePrice) {
-        this.insurancePrice = insurancePrice;
+    public void setBornDate(String bornDate) {
+        try {
+            this.bornDate = dateFormat.parse(bornDate);
+        }catch(java.text.ParseException e){
+            System.out.println("wrong date format: " + bornDate);
+        }finally {
+
+        }
     }
 
-    InsuredPerson(String personFIO, Date bornDate, float insurancePrice){
+    public InsuredPerson(String personFIO, String bornDate, float insurancePrice){
         super(personFIO);
-        this.bornDate = bornDate;
+        this.setBornDate(bornDate);
         this.insurancePrice = insurancePrice;
     }
 }

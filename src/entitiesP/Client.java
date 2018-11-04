@@ -32,7 +32,6 @@ public class Client extends BasicPerson {
 
     public Client(
             String personFIO,
-            ClientType clientType,
             String address,
             String enterpriseName
     ){
