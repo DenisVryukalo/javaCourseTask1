@@ -1,14 +1,22 @@
-package entitiesP;
+package entities;
 
 import java.text.DateFormat;
 import java.util.Date;
 
 public class InsuredPerson extends BasicPerson {
+    //fields----------------------------------------------------------------------------------
     private Date bornDate;
     private float insurancePrice;
     private static DateFormat dateFormat = DateFormat.getDateInstance(DateFormat.SHORT);
 
+    //constructor-----------------------------------------------------------------------------
+    public InsuredPerson(String personFIO, String bornDate, float insurancePrice){
+        super(personFIO);
+        this.setBornDate(bornDate);
+        this.insurancePrice = insurancePrice;
+    }
 
+    //getters & setters-----------------------------------------------------------------------
     public String getBornDate() {
         return "" + dateFormat.format(bornDate);
     }
@@ -29,11 +37,5 @@ public class InsuredPerson extends BasicPerson {
         }finally {
 
         }
-    }
-
-    public InsuredPerson(String personFIO, String bornDate, float insurancePrice){
-        super(personFIO);
-        this.setBornDate(bornDate);
-        this.insurancePrice = insurancePrice;
     }
 }

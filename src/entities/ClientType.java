@@ -1,14 +1,16 @@
-package entitiesP;
+package entities;
 
 enum ClientType {
+
     PRIVATE_PERSON, JURISTIC_PERSON;
 
+    //method for writing a string
     public String getValue(){
         switch (this){
             case PRIVATE_PERSON:
-                return "private person";
+                return "физическое лицо";
             case JURISTIC_PERSON:
-                return "juristic person";
+                return "юридическое лицо";
             default:
                 return "";
         }

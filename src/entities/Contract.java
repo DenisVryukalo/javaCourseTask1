@@ -1,4 +1,4 @@
-package entitiesP;
+package entities;
 
 import java.text.DateFormat;
 import java.util.Calendar;
@@ -6,7 +6,10 @@ import java.util.Date;
 import java.util.ArrayList;
 
 public class Contract {
+    //fields--------------------------------------------------------------------------------
     private int number;
+    // Даты хранятся с типом "дата", но доступ
+    // происходит через строковые значения
     private Date agreeDate;
     private Date startDate;
     private Date stopDate;
@@ -14,6 +17,7 @@ public class Contract {
     private ArrayList<InsuredPerson> insuredPersons;
     private static DateFormat dateFormat = DateFormat.getDateInstance(DateFormat.SHORT);
 
+    //constructor---------------------------------------------------------------------------
     public Contract(
         int number,
         String agreeDate,
@@ -30,6 +34,7 @@ public class Contract {
       this.insuredPersons = insuredPersons;
     }
 
+    //getters & setters--------------------------------------------------------------------
     public int getNumber() {
         return number;
     }
@@ -38,10 +43,12 @@ public class Contract {
         this.number = number;
     }
 
+    // Даты выдаются в виде строк
     public String getAgreeDate() {
         return "" + dateFormat.format(agreeDate);
     }
 
+    // И принимаются тоже
     public void setAgreeDate(String agreeDate) {
         try {
             this.agreeDate = dateFormat.parse(agreeDate);
@@ -80,19 +87,26 @@ public class Contract {
         }
     }
 
-    public String getClient() {
+    public String getClientFIO() {
         return client.getPersonFIO();
+    }
+
+    public String getClientType() {
+        return client.getClientType();
     }
 
     public void setClient(Client client) {
         this.client = client;
     }
 
+    // Добавление элементов в список
+    // застрахованных лиц
     public boolean addInsuredPerson(InsuredPerson insuredPerson){
         insuredPersons.add(insuredPerson);
         return true;
     }
 
+    //Получение элементов списка по номеру и по ФИО
     public InsuredPerson getInsuredPersonByNum(int num){
         if(insuredPersons.size() < num){
             return null;
@@ -111,11 +125,27 @@ public class Contract {
         return null;
     }
 
+    // Подсчет общей суммы страховки--------------------------------------------------------
     public float getTotalPrice(){
         float sum = 0;
         for(InsuredPerson insuredPerson : insuredPersons){
             sum += insuredPerson.getInsurancePrice();
         }
         return sum;
+    }
+
+    // Вывод информации в консоль
+    public void writeInConsole(){
+        System.out.println("Контракт № " + number + ":");
+        System.out.println("дата заключения - " + getAgreeDate());
+        System.out.println(
+            "действует с " +
+            getStartDate() +
+            " по " +
+            getStopDate()
+        );
+        // Часть, связанная с клиентом, ревлизована в соответствующем классе
+        client.writeInConsole();
+        System.out.println("общая сумма - " + getTotalPrice());
     }
 }
