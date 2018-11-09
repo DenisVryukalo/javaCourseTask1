@@ -1,10 +1,10 @@
 package entities;
 
-enum ClientType {
+public enum ClientType {
 
     PRIVATE_PERSON, JURISTIC_PERSON;
 
-    //method for writing a string
+    //Method for writing a string
     public String getValue(){
         switch (this){
             case PRIVATE_PERSON:

@@ -1,35 +1,21 @@
 package entities;
 
 public class Client extends BasicPerson {
-    //fields---------------------------------------------------------------------------
     private ClientType clientType;
     private String address;
     private String enterpriseName;
 
-    //constructors for private and juristic persons------------------------------------
     public Client(
-            String personFIO,
-            String address,
-            String enterpriseName
-    ){
-        super(personFIO);
-        this.clientType = ClientType.JURISTIC_PERSON;
-        this.address = address;
-        this.enterpriseName = enterpriseName;
-    }
-
-    public Client(
-            String personFIO,
+            ClientType type,
+            String name,
             String address
     ){
-        super(personFIO);
-        this.clientType = ClientType.PRIVATE_PERSON;
+        super((type == ClientType.JURISTIC_PERSON)? null: name);
+        this.enterpriseName = (type == ClientType.JURISTIC_PERSON)? name: null;
+        this.clientType = type;
         this.address = address;
-        this.enterpriseName = "";
-
     }
 
-    //getters & setters--------------------------------------------------------------
     public String getClientType() {
         return clientType.getValue();
     }
@@ -54,12 +40,14 @@ public class Client extends BasicPerson {
         this.enterpriseName = enterpriseName;
     }
 
-    // Вывод информации о клиенте в консоль
+    // Client information output
     public void writeInConsole(){
-        System.out.println("клиент - " + getPersonFIO());
-        System.out.println(getClientType());
         if(clientType == clientType.JURISTIC_PERSON){
-            System.out.println(enterpriseName);
+            System.out.println("клиент - " + enterpriseName);
         }
+        else{
+            System.out.println("клиент - " + getPersonFIO());
+        }
+        System.out.println(getClientType());
     }
 }

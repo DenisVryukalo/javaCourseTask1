@@ -6,18 +6,17 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 
 public class Start {
-    //main-------------------------------------------------------------------------------------------------------------
     public static void main(String[] args){
         test1();
     }
 
-    // Технические элементы--------------------------------------------------------------------------------------------
-    // Формат даты
+    // Object for data formatting
     public static SimpleDateFormat dateFormat  = new SimpleDateFormat("dd/mm/yyyy");
 
-    // Пример работы классов-------------------------------------------------------------------------------------------ы
+    // Example of classes' work
     public static void test1(){
         Client client1 = new Client(
+                ClientType.PRIVATE_PERSON,
                 "Врюкало Денис Максимович",
                 "Харьков, ул. Цветочная, д. 15"
         );
@@ -44,9 +43,9 @@ public class Start {
 
 
         Client client2 = new Client(
-                "Ягич Александр Виталиевич",
-                "Харьков, ул. Танкопия, д. 102",
-                "ООО Секрет"
+                ClientType.JURISTIC_PERSON,
+                "ООО Секрет",
+                "Харьков, ул. Танкопия, д. 102"
         );
 
         Contract contract2 = new Contract(

@@ -1,15 +1,13 @@
 package entities;
 
 import java.text.DateFormat;
-import java.util.Calendar;
 import java.util.Date;
 import java.util.ArrayList;
 
 public class Contract {
-    //fields--------------------------------------------------------------------------------
     private int number;
-    // Даты хранятся с типом "дата", но доступ
-    // происходит через строковые значения
+    // Dates are stored with the type "Date", but
+    // access is implemented by string values
     private Date agreeDate;
     private Date startDate;
     private Date stopDate;
@@ -17,7 +15,6 @@ public class Contract {
     private ArrayList<InsuredPerson> insuredPersons;
     private static DateFormat dateFormat = DateFormat.getDateInstance(DateFormat.SHORT);
 
-    //constructor---------------------------------------------------------------------------
     public Contract(
         int number,
         String agreeDate,
@@ -34,7 +31,6 @@ public class Contract {
       this.insuredPersons = insuredPersons;
     }
 
-    //getters & setters--------------------------------------------------------------------
     public int getNumber() {
         return number;
     }
@@ -43,19 +39,17 @@ public class Contract {
         this.number = number;
     }
 
-    // Даты выдаются в виде строк
+    // Gives the date as a string
     public String getAgreeDate() {
         return "" + dateFormat.format(agreeDate);
     }
 
-    // И принимаются тоже
+    // Sets the date taking a string value
     public void setAgreeDate(String agreeDate) {
         try {
             this.agreeDate = dateFormat.parse(agreeDate);
         }catch(java.text.ParseException e){
             System.out.println("wrong date format: " + agreeDate);
-        }finally {
-
         }
     }
 
@@ -68,8 +62,6 @@ public class Contract {
             this.startDate = dateFormat.parse(startDate);
         }catch(java.text.ParseException e){
             System.out.println("wrong date format: " + startDate);
-        }finally {
-
         }
     }
 
@@ -82,8 +74,6 @@ public class Contract {
             this.stopDate = dateFormat.parse(stopDate);
         }catch(java.text.ParseException e){
             System.out.println("wrong date format: " + stopDate);
-        }finally {
-
         }
     }
 
@@ -99,8 +89,7 @@ public class Contract {
         this.client = client;
     }
 
-    // Добавление элементов в список
-    // застрахованных лиц
+    // Filling the list of insured persons9
     public boolean addInsuredPerson(InsuredPerson insuredPerson){
         insuredPersons.add(insuredPerson);
         return true;
@@ -125,7 +114,6 @@ public class Contract {
         return null;
     }
 
-    // Подсчет общей суммы страховки--------------------------------------------------------
     public float getTotalPrice(){
         float sum = 0;
         for(InsuredPerson insuredPerson : insuredPersons){
@@ -134,7 +122,7 @@ public class Contract {
         return sum;
     }
 
-    // Вывод информации в консоль
+    // Console output
     public void writeInConsole(){
         System.out.println("Контракт № " + number + ":");
         System.out.println("дата заключения - " + getAgreeDate());
@@ -144,7 +132,7 @@ public class Contract {
             " по " +
             getStopDate()
         );
-        // Часть, связанная с клиентом, ревлизована в соответствующем классе
+        // Here is the information expert pattern
         client.writeInConsole();
         System.out.println("общая сумма - " + getTotalPrice());
     }
