@@ -5,11 +5,7 @@ public class Client extends BasicPerson {
     private String address;
     private String enterpriseName;
 
-    public Client(
-            ClientType type,
-            String name,
-            String address
-    ){
+    public Client(ClientType type, String name, String address){
         super((type == ClientType.JURISTIC_PERSON)? null: name);
         this.enterpriseName = (type == ClientType.JURISTIC_PERSON)? name: null;
         this.clientType = type;
@@ -40,14 +36,17 @@ public class Client extends BasicPerson {
         this.enterpriseName = enterpriseName;
     }
 
-    // Client information output
-    public void writeInConsole(){
+    @Override
+    public String toString(){
+        StringBuilder result = new StringBuilder();
+        result.append("клиент - ");
         if(clientType == clientType.JURISTIC_PERSON){
-            System.out.println("клиент - " + enterpriseName);
+            result.append(this.enterpriseName);
         }
         else{
-            System.out.println("клиент - " + getPersonFIO());
+            System.out.println(getPersonFIO());
         }
-        System.out.println(getClientType());
+        result.append(getClientType());
+        return result.toString();
     }
 }

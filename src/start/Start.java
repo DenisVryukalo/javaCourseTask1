@@ -33,12 +33,14 @@ public class Start {
         contract1.addInsuredPerson(new InsuredPerson(
                 "Вовк Максим Дмитриевич",
                 "04.05.1998",
-                24000)
+                24000,
+                2457656486558L)
         );
         contract1.addInsuredPerson(new InsuredPerson(
                 "Лисовская Виктория Валериевна",
                 "02.08.1999",
-                25000
+                25000,
+                36582343487696L
         ));
 
 
@@ -60,10 +62,11 @@ public class Start {
         contract2.addInsuredPerson(new InsuredPerson(
                 "Врюкало Денис Максимович",
                 "07.09.1998",
-                2400));
+                2400,
+                257365847356L));
 
-        contract1.writeInConsole();
+        System.out.println(contract1.toString());
         System.out.println();
-        contract2.writeInConsole();
+        System.out.println(contract2.toString());
     }
 }

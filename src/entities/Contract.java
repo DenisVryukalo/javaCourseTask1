@@ -123,17 +123,15 @@ public class Contract {
     }
 
     // Console output
-    public void writeInConsole(){
-        System.out.println("Контракт № " + number + ":");
-        System.out.println("дата заключения - " + getAgreeDate());
-        System.out.println(
-            "действует с " +
-            getStartDate() +
-            " по " +
-            getStopDate()
-        );
+    @Override
+    public String toString(){
+        StringBuilder result = new StringBuilder();
+        result.append("Контракт № " + number + ":" + "\n");
+        result.append("дата заключения - " + getAgreeDate() + "\n");
+        result.append("действует с " + getStartDate() + " по " + getStopDate() + "\n");
         // Here is the information expert pattern
-        client.writeInConsole();
-        System.out.println("общая сумма - " + getTotalPrice());
+        result.append(client.toString() + "\n");
+        result.append("общая сумма - " + getTotalPrice() + "\n");
+        return result.toString();
     }
 }
