@@ -115,12 +115,20 @@ public class Contract {
     }
     public float getTotalPriceIterator(){
         float sum = 0;
-        Iterator<InsuredPerson> curStr = insuredPersons.iterator();
-        while(curStr.hasNext())
-        {
-            sum += curStr.next().getInsurancePrice();
+
+        try {
+            Iterator<InsuredPerson> curStr = insuredPersons.iterator();
+            while(curStr.hasNext())
+            {
+                sum += curStr.next().getInsurancePrice();
+            }
+        }catch(NullPointerException e){
+            System.out.println(e.toString());
+        }catch(IllegalArgumentException e){
+            System.out.println(e.toString());
+        }finally{
+            return sum;
         }
-        return sum;
     }
 
     public void printInsureesByAlphabet(){
