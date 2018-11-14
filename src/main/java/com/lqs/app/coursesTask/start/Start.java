@@ -63,7 +63,8 @@ public class Start {
                 "Врюкало Денис Максимович",
                 "07.09.1998",
                 2400,
-                257365847356L));
+                257365847356L
+        ));
 
         System.out.println(contract1.toString());
         System.out.println();

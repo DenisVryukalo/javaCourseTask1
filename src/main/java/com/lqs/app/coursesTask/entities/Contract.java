@@ -15,12 +15,20 @@ public class Contract {
     private static DateFormat dateFormat = DateFormat.getDateInstance(DateFormat.SHORT);
 
     public Contract(int number, String agreeDate, String startDate, String stopDate, Client client, ArrayList<InsuredPerson> insuredPersons) {
-      this.number = number;
-      this.setAgreeDate(agreeDate);
-      this.setStartDate(startDate);
-      this.setStopDate(stopDate);
-      this.client = client;
-      this.insuredPersons = insuredPersons;
+        this.number = number;
+        this.setAgreeDate(agreeDate);
+        this.setStartDate(startDate);
+        this.setStopDate(stopDate);
+        this.client = client;
+        this.insuredPersons = insuredPersons;
+    }
+    public Contract(int number, String agreeDate, String startDate, String stopDate, Client client) {
+        this.number = number;
+        this.setAgreeDate(agreeDate);
+        this.setStartDate(startDate);
+        this.setStopDate(stopDate);
+        this.client = client;
+        this.insuredPersons = new ArrayList<InsuredPerson>();
     }
 
     public int getNumber() {
@@ -82,9 +90,10 @@ public class Contract {
     }
 
     // Filling the list of insured persons9
-    public boolean addInsuredPerson(InsuredPerson insuredPerson){
-        insuredPersons.add(insuredPerson);
-        return true;
+    public void addInsuredPerson(InsuredPerson insuredPerson){
+        if(insuredPerson != null) {
+            insuredPersons.add(insuredPerson);
+        }
     }
 
     //Получение элементов списка по номеру и по ФИО
@@ -108,12 +117,20 @@ public class Contract {
 
     public float getTotalPriceForeach(){
         float sum = 0;
-        for(InsuredPerson insuredPerson : insuredPersons){
-            sum += insuredPerson.getInsurancePrice();
+
+        try {
+            for(InsuredPerson insuredPerson : insuredPersons){
+                sum += insuredPerson.getInsurancePrice();
+            }
+        }catch(NullPointerException e){
+            System.out.println(e.toString());
+        }catch(IllegalArgumentException e){
+            System.out.println(e.toString());
+        }finally{
+            return sum;
         }
-        return sum;
     }
-    public float getTotalPriceIterator(){
+    public float getTotalPriceByIterator(){
         float sum = 0;
 
         try {
@@ -153,7 +170,7 @@ public class Contract {
         result.append("действует с " + getStartDate() + " по " + getStopDate() + "\n");
         // Here is the information expert pattern
         result.append(client.toString() + "\n");
-        result.append("общая сумма - " + getTotalPriceIterator() + "\n");
+        result.append("общая сумма - " + getTotalPriceByIterator() + "\n");
         return result.toString();
     }
 }

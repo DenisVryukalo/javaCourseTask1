@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d324df73-aa55-490e-b1bc-b179646f2544" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/lqs/app/coursesTask/entities/Contract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lqs/app/coursesTask/entities/Contract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lqs/app/coursesTask/start/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lqs/app/coursesTask/start/Start.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/lqs/app/coursesTask/entities/ContractTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/lqs/app/coursesTask/entities/ContractTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/lqs/app/coursesTask/entities/InsuredPersonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/lqs/app/coursesTask/entities/InsuredPersonTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lqs/app/coursesTask/entities/Contract.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lqs/app/coursesTask/entities/Contract.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lqs/app/coursesTask/start/Start.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lqs/app/coursesTask/start/Start.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/lqs/app/coursesTask/entities/ContractTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/lqs/app/coursesTask/entities/ContractTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/lqs/app/coursesTask/entities/InsuredPersonTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/lqs/app/coursesTask/entities/InsuredPersonTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,23 +49,39 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Contract.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Contract.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/lqs/app/coursesTask/entities/Contract.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="115" column="41" lean-forward="true" selection-start-line="115" selection-start-column="41" selection-end-line="115" selection-end-column="41" />
+            <state relative-caret-position="442">
+              <caret line="30" column="60" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#906#907#0" expanded="true" />
+                <element signature="e#935#936#0" expanded="true" />
+                <element signature="e#976#977#0" expanded="true" />
+                <element signature="e#1012#1013#0" expanded="true" />
+                <element signature="e#1082#1083#0" expanded="true" />
+                <element signature="e#1138#1139#0" expanded="true" />
+                <element signature="e#1466#1467#0" expanded="true" />
+                <element signature="e#1522#1523#0" expanded="true" />
+                <element signature="e#1806#1807#0" expanded="true" />
+                <element signature="e#1861#1862#0" expanded="true" />
+                <element signature="e#2141#2142#0" expanded="true" />
+                <element signature="e#2185#2186#0" expanded="true" />
+                <element signature="e#2222#2223#0" expanded="true" />
+                <element signature="e#2267#2268#0" expanded="true" />
+                <element signature="e#2311#2312#0" expanded="true" />
+                <element signature="e#2347#2348#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ContractTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ContractTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/lqs/app/coursesTask/entities/ContractTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+            <state relative-caret-position="204">
+              <caret line="12" column="91" selection-start-line="12" selection-start-column="91" selection-end-line="12" selection-end-column="91" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -68,7 +92,7 @@
       <file leaf-file-name="InsuredPerson.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/lqs/app/coursesTask/entities/InsuredPerson.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-306">
+            <state relative-caret-position="17">
               <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -80,8 +104,8 @@
       <file leaf-file-name="InsuredPersonTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/lqs/app/coursesTask/entities/InsuredPersonTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="63" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="63" />
+            <state relative-caret-position="68">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -92,8 +116,8 @@
       <file leaf-file-name="Start.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/lqs/app/coursesTask/start/Start.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="42" column="24" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+            <state relative-caret-position="952">
+              <caret line="61" column="8" selection-start-line="61" selection-start-column="8" selection-end-line="66" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -120,10 +144,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/lqs/app/coursesTask/entities/Client.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lqs/app/coursesTask/entities/ClientType.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lqs/app/coursesTask/entities/InsuredPerson.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lqs/app/coursesTask/start/Start.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/lqs/app/coursesTask/entities/InsuredPersonTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lqs/app/coursesTask/entities/Contract.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lqs/app/coursesTask/start/Start.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/lqs/app/coursesTask/entities/ContractTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lqs/app/coursesTask/entities/Contract.java" />
       </list>
     </option>
   </component>
@@ -234,8 +258,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -264,7 +288,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.InsuredPersonTest.getPersonFIOshort">
+  <component name="RunManager" selected="JUnit.ContractTest">
     <configuration name="Start" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.lqs.app.coursesTask.start.Start" />
       <module name="coursesTask" />
@@ -278,6 +302,52 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="ContractTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="coursesTask" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lqs.app.coursesTask.entities.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.lqs.app.coursesTask.entities" />
+      <option name="MAIN_CLASS_NAME" value="com.lqs.app.coursesTask.entities.ContractTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="ContractTest.getTotalPrice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="coursesTask" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lqs.app.coursesTask.entities.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.lqs.app.coursesTask.entities" />
+      <option name="MAIN_CLASS_NAME" value="com.lqs.app.coursesTask.entities.ContractTest" />
+      <option name="METHOD_NAME" value="getTotalPrice" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration name="InsuredPersonTest.getBornDate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="coursesTask" />
@@ -367,9 +437,13 @@
       <item itemvalue="Application.Start" />
       <item itemvalue="JUnit.InsuredPersonTest.getBornDate" />
       <item itemvalue="JUnit.InsuredPersonTest.getPersonFIOshort" />
+      <item itemvalue="JUnit.ContractTest" />
+      <item itemvalue="JUnit.ContractTest.getTotalPrice" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ContractTest" />
+        <item itemvalue="JUnit.ContractTest.getTotalPrice" />
         <item itemvalue="JUnit.InsuredPersonTest.getPersonFIOshort" />
         <item itemvalue="JUnit.InsuredPersonTest.getBornDate" />
         <item itemvalue="Application.Start" />
@@ -390,14 +464,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="InsuredPersonTest_getBornDate - 2018.11.13 at 13h 48m 16s.xml">
-      <configuration name="InsuredPersonTest.getBornDate" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="InsuredPersonTest_getPersonFIOshort - 2018.11.13 at 13h 49m 36s.xml">
-      <configuration name="InsuredPersonTest.getPersonFIOshort" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="InsuredPersonTest_getPersonFIOshort - 2018.11.13 at 13h 58m 19s.xml">
       <configuration name="InsuredPersonTest.getPersonFIOshort" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ContractTest - 2018.11.13 at 21h 55m 06s.xml">
+      <configuration name="ContractTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ContractTest - 2018.11.13 at 21h 57m 38s.xml">
+      <configuration name="ContractTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ContractTest - 2018.11.13 at 22h 01m 04s.xml">
+      <configuration name="ContractTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ContractTest - 2018.11.14 at 17h 40m 03s.xml">
+      <configuration name="ContractTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ContractTest - 2018.11.14 at 19h 13m 27s.xml">
+      <configuration name="ContractTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ContractTest - 2018.11.14 at 19h 14m 04s.xml">
+      <configuration name="ContractTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ContractTest_getTotalPrice - 2018.11.14 at 19h 31m 11s.xml">
+      <configuration name="ContractTest.getTotalPrice" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ContractTest_getTotalPrice - 2018.11.14 at 19h 32m 16s.xml">
+      <configuration name="ContractTest.getTotalPrice" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ContractTest_getTotalPrice - 2018.11.14 at 19h 33m 12s.xml">
+      <configuration name="ContractTest.getTotalPrice" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -413,17 +508,17 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.22765957" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32336655" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32336655" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11914894" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15638298" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39977852" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -457,12 +552,202 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/lqs/app/coursesTask/entities/ContractTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="26" column="22" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="26" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lqs/app/coursesTask/entities/InsuredPerson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/lqs/app/coursesTask/entities/InsuredPersonTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lqs/app/coursesTask/start/Start.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="952">
+          <caret line="61" column="8" selection-start-line="61" selection-start-column="8" selection-end-line="66" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lqs/app/coursesTask/entities/Contract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="59" column="31" selection-start-line="59" selection-start-column="31" selection-end-line="59" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#906#907#0" expanded="true" />
+            <element signature="e#935#936#0" expanded="true" />
+            <element signature="e#976#977#0" expanded="true" />
+            <element signature="e#1012#1013#0" expanded="true" />
+            <element signature="e#1082#1083#0" expanded="true" />
+            <element signature="e#1138#1139#0" expanded="true" />
+            <element signature="e#1466#1467#0" expanded="true" />
+            <element signature="e#1522#1523#0" expanded="true" />
+            <element signature="e#1806#1807#0" expanded="true" />
+            <element signature="e#1861#1862#0" expanded="true" />
+            <element signature="e#2141#2142#0" expanded="true" />
+            <element signature="e#2185#2186#0" expanded="true" />
+            <element signature="e#2222#2223#0" expanded="true" />
+            <element signature="e#2267#2268#0" expanded="true" />
+            <element signature="e#2311#2312#0" expanded="true" />
+            <element signature="e#2347#2348#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lqs/app/coursesTask/entities/BasicPerson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" selection-start-column="8" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lqs/app/coursesTask/entities/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="32" selection-start-column="32" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lqs/app/coursesTask/entities/ClientType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="32" selection-start-column="32" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lqs/app/coursesTask/entities/Contract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1955">
+          <caret line="115" column="41" lean-forward="true" selection-start-line="115" selection-start-column="41" selection-end-line="115" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#906#907#0" expanded="true" />
+            <element signature="e#935#936#0" expanded="true" />
+            <element signature="e#976#977#0" expanded="true" />
+            <element signature="e#1012#1013#0" expanded="true" />
+            <element signature="e#1082#1083#0" expanded="true" />
+            <element signature="e#1138#1139#0" expanded="true" />
+            <element signature="e#1466#1467#0" expanded="true" />
+            <element signature="e#1522#1523#0" expanded="true" />
+            <element signature="e#1806#1807#0" expanded="true" />
+            <element signature="e#1861#1862#0" expanded="true" />
+            <element signature="e#2141#2142#0" expanded="true" />
+            <element signature="e#2185#2186#0" expanded="true" />
+            <element signature="e#2222#2223#0" expanded="true" />
+            <element signature="e#2267#2268#0" expanded="true" />
+            <element signature="e#2311#2312#0" expanded="true" />
+            <element signature="e#2347#2348#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lqs/app/coursesTask/entities/InsuredPerson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/lqs/app/coursesTask/entities/InsuredPersonTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="63" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lqs/app/coursesTask/start/Start.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="42" column="24" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/lqs/app/coursesTask/entities/ContractTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lqs/app/coursesTask/entities/BasicPerson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" selection-start-column="8" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lqs/app/coursesTask/entities/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="32" selection-start-column="32" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lqs/app/coursesTask/entities/ClientType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="32" selection-start-column="32" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lqs/app/coursesTask/entities/Contract.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#906#907#0" expanded="true" />
+            <element signature="e#935#936#0" expanded="true" />
+            <element signature="e#976#977#0" expanded="true" />
+            <element signature="e#1012#1013#0" expanded="true" />
+            <element signature="e#1082#1083#0" expanded="true" />
+            <element signature="e#1138#1139#0" expanded="true" />
+            <element signature="e#1466#1467#0" expanded="true" />
+            <element signature="e#1522#1523#0" expanded="true" />
+            <element signature="e#1806#1807#0" expanded="true" />
+            <element signature="e#1861#1862#0" expanded="true" />
+            <element signature="e#2141#2142#0" expanded="true" />
+            <element signature="e#2185#2186#0" expanded="true" />
+            <element signature="e#2222#2223#0" expanded="true" />
+            <element signature="e#2267#2268#0" expanded="true" />
+            <element signature="e#2311#2312#0" expanded="true" />
+            <element signature="e#2347#2348#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -510,18 +795,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lqs/app/coursesTask/start/Start.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="42" column="24" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lqs/app/coursesTask/entities/InsuredPerson.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-306">
-          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+        <state relative-caret-position="952">
+          <caret line="61" column="8" selection-start-line="61" selection-start-column="8" selection-end-line="66" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -530,18 +805,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/lqs/app/coursesTask/entities/InsuredPersonTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="63" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lqs/app/coursesTask/entities/Contract.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="115" column="41" lean-forward="true" selection-start-line="115" selection-start-column="41" selection-end-line="115" selection-end-column="41" />
+        <state relative-caret-position="68">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -550,10 +815,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/lqs/app/coursesTask/entities/ContractTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        <state relative-caret-position="204">
+          <caret line="12" column="91" selection-start-line="12" selection-start-column="91" selection-end-line="12" selection-end-column="91" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lqs/app/coursesTask/entities/InsuredPerson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lqs/app/coursesTask/entities/Contract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="30" column="60" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#906#907#0" expanded="true" />
+            <element signature="e#935#936#0" expanded="true" />
+            <element signature="e#976#977#0" expanded="true" />
+            <element signature="e#1012#1013#0" expanded="true" />
+            <element signature="e#1082#1083#0" expanded="true" />
+            <element signature="e#1138#1139#0" expanded="true" />
+            <element signature="e#1466#1467#0" expanded="true" />
+            <element signature="e#1522#1523#0" expanded="true" />
+            <element signature="e#1806#1807#0" expanded="true" />
+            <element signature="e#1861#1862#0" expanded="true" />
+            <element signature="e#2141#2142#0" expanded="true" />
+            <element signature="e#2185#2186#0" expanded="true" />
+            <element signature="e#2222#2223#0" expanded="true" />
+            <element signature="e#2267#2268#0" expanded="true" />
+            <element signature="e#2311#2312#0" expanded="true" />
+            <element signature="e#2347#2348#0" expanded="true" />
           </folding>
         </state>
       </provider>
