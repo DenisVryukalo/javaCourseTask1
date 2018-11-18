@@ -1,0 +1,10 @@
+com\lqs\app\coursesTask\entities\Insuree$1.class
+com\lqs\app\coursesTask\entities\Contract.class
+com\lqs\app\coursesTask\entities\Insuree.class
+com\lqs\app\coursesTask\entities\ClientType.class
+com\lqs\app\coursesTask\entities\Client.class
+com\lqs\app\coursesTask\entities\Insuree$2.class
+com\lqs\app\coursesTask\streamServices\CSVContractInterface.class
+com\lqs\app\coursesTask\entities\ClientType$1.class
+com\lqs\app\coursesTask\entities\BasicPerson.class
+com\lqs\app\coursesTask\start\Start.class

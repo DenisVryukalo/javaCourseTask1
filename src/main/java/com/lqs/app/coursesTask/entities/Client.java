@@ -1,39 +1,20 @@
 package com.lqs.app.coursesTask.entities;
 
-public class Client extends BasicPerson {
+import lombok.*;
+
+import javax.management.InvalidAttributeValueException;
+
+@Getter @Setter public class Client extends BasicPerson {
     private ClientType clientType;
     private String address;
     private String enterpriseName;
+    //@Getter private static String simpleFieldsMapping = "address";
 
     public Client(ClientType type, String name, String address){
-        super((type == ClientType.JURISTIC_PERSON)? null: name);
-        this.enterpriseName = (type == ClientType.JURISTIC_PERSON)? name: null;
+        super((type == ClientType.JURISTIC_PERSON)? "" : name);
+        this.enterpriseName = (type == ClientType.JURISTIC_PERSON)? name : "";
         this.clientType = type;
         this.address = address;
-    }
-
-    public String getClientType() {
-        return clientType.getValue();
-    }
-
-    public void setClientType(ClientType clientType) {
-        this.clientType = clientType;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    public String getEnterpriseName() {
-        return enterpriseName;
-    }
-
-    public void setEnterpriseName(String enterpriseName) {
-        this.enterpriseName = enterpriseName;
     }
 
     @Override
@@ -46,7 +27,7 @@ public class Client extends BasicPerson {
         else{
             result.append(this.getPersonFIO());
         }
-        result.append(", " + getClientType());
+        result.append(", " + getClientType().getValue());
         return result.toString();
     }
 }

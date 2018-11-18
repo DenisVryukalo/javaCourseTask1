@@ -2,19 +2,21 @@ package com.lqs.app.coursesTask.entities;
 
 import java.text.DateFormat;
 import java.util.*;
+import lombok.*;
 
 public class Contract {
-    private int number;
+    @Getter @Setter private int number;
     // Dates are stored with the type "Date", but
     // access is implemented by string values
     private Date agreeDate;
     private Date startDate;
     private Date stopDate;
-    private Client client;
-    private ArrayList<InsuredPerson> insuredPersons;
+    @Getter @Setter private Client client;
+    private ArrayList<Insuree> insuredPersons;
     private static DateFormat dateFormat = DateFormat.getDateInstance(DateFormat.SHORT);
+    //@Getter private static String simpleFieldsMapping = "number,agreeDate,startDate,stopDate";
 
-    public Contract(int number, String agreeDate, String startDate, String stopDate, Client client, ArrayList<InsuredPerson> insuredPersons) {
+    public Contract(int number, String agreeDate, String startDate, String stopDate, Client client, ArrayList<Insuree> insuredPersons) {
         this.number = number;
         this.setAgreeDate(agreeDate);
         this.setStartDate(startDate);
@@ -28,15 +30,7 @@ public class Contract {
         this.setStartDate(startDate);
         this.setStopDate(stopDate);
         this.client = client;
-        this.insuredPersons = new ArrayList<InsuredPerson>();
-    }
-
-    public int getNumber() {
-        return number;
-    }
-
-    public void setNumber(int number) {
-        this.number = number;
+        this.insuredPersons = new ArrayList<Insuree>();
     }
 
     // Gives the date as a string
@@ -82,22 +76,18 @@ public class Contract {
     }
 
     public String getClientType() {
-        return client.getClientType();
-    }
-
-    public void setClient(Client client) {
-        this.client = client;
+        return client.getClientType().toString();
     }
 
     // Filling the list of insured persons9
-    public void addInsuredPerson(InsuredPerson insuredPerson){
+    public void addInsuredPerson(Insuree insuredPerson){
         if(insuredPerson != null) {
             insuredPersons.add(insuredPerson);
         }
     }
 
-    //Получение элементов списка по номеру и по ФИО
-    public InsuredPerson getInsuredPersonByNum(int num){
+    //Getting the elements of the list by number and by FIO
+    public Insuree getInsuredPersonByNum(int num){
         if(insuredPersons.size() < num){
             return null;
         }
@@ -106,8 +96,8 @@ public class Contract {
         }
     }
 
-    public InsuredPerson getInsuredPersonByFIO(String personFIO){
-        for(InsuredPerson currentPerson : insuredPersons){
+    public Insuree getInsuredPersonByFIO(String personFIO){
+        for(Insuree currentPerson : insuredPersons){
             if(currentPerson.getPersonFIO() == personFIO){
                 return currentPerson;
             }
@@ -117,47 +107,31 @@ public class Contract {
 
     public float getTotalPriceForeach(){
         float sum = 0;
-
-        try {
-            for(InsuredPerson insuredPerson : insuredPersons){
-                sum += insuredPerson.getInsurancePrice();
-            }
-        }catch(NullPointerException e){
-            System.out.println(e.toString());
-        }catch(IllegalArgumentException e){
-            System.out.println(e.toString());
-        }finally{
-            return sum;
+        for(Insuree insuredPerson : insuredPersons){
+            sum += insuredPerson.getInsurancePrice();
         }
+        return sum;
     }
     public float getTotalPriceByIterator(){
         float sum = 0;
-
-        try {
-            Iterator<InsuredPerson> curStr = insuredPersons.iterator();
-            while(curStr.hasNext())
-            {
-                sum += curStr.next().getInsurancePrice();
-            }
-        }catch(NullPointerException e){
-            System.out.println(e.toString());
-        }catch(IllegalArgumentException e){
-            System.out.println(e.toString());
-        }finally{
-            return sum;
+        Iterator<Insuree> curStr = insuredPersons.iterator();
+        while(curStr.hasNext())
+        {
+            sum += curStr.next().getInsurancePrice();
         }
+        return sum;
     }
 
     public void printInsureesByAlphabet(){
-        Collections.sort(insuredPersons, InsuredPerson.compareNames);
-        for(InsuredPerson insuree : insuredPersons){
-            System.out.println(insuree.getPersonFIOshort()+ " " + insuree.getBornDate() + " " + insuree.getInsurancePrice());
+        Collections.sort(insuredPersons, Insuree.compareNames);
+        for(Insuree insuree : insuredPersons){
+            System.out.println(insuree.getPersonFIOshort() + " " + insuree.getBornDate() + " " + insuree.getInsurancePrice());
         }
     }
     public void printInsureesByBornDate(){
-        Collections.sort(insuredPersons, InsuredPerson.compareBornDates);
-        for(InsuredPerson insuree : insuredPersons){
-            System.out.println(insuree.getPersonFIOshort()+ " " + insuree.getBornDate() + " " + insuree.getInsurancePrice());
+        Collections.sort(insuredPersons, Insuree.compareBornDates);
+        for(Insuree insuree : insuredPersons){
+            System.out.println(insuree.getPersonFIOshort() + " " + insuree.getBornDate() + " " + insuree.getInsurancePrice());
         }
     }
 
@@ -165,12 +139,12 @@ public class Contract {
     @Override
     public String toString(){
         StringBuilder result = new StringBuilder();
-        result.append("Контракт № " + number + ":" + "\n");
-        result.append("дата заключения - " + getAgreeDate() + "\n");
-        result.append("действует с " + getStartDate() + " по " + getStopDate() + "\n");
+        result.append("Контракт № " + number + ":" + System.lineSeparator());
+        result.append("дата заключения - " + getAgreeDate() + System.lineSeparator());
+        result.append("действует с " + getStartDate() + " по " + getStopDate() + System.lineSeparator());
         // Here is the information expert pattern
-        result.append(client.toString() + "\n");
-        result.append("общая сумма - " + getTotalPriceByIterator() + "\n");
+        result.append(client.toString() + System.lineSeparator());
+        result.append("общая сумма - ");
         return result.toString();
     }
 }
